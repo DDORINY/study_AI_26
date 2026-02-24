@@ -12,14 +12,13 @@
 - [x] 데이터 전처리 (StandardScaler)
 - [x] KNN 분류 기초
 > 머신러닝 기본기 완료 단계
-
-[학습노트](https://github.com/DDORINY/study_AI_26/blob/main/Supervised%20Learning%20Basics.md)
+> [학습노트 요약 보러가기](https://github.com/DDORINY/study_AI_26/blob/main/Supervised%20Learning%20Basics.md)
 
 ---
 
 ## 2단계: KNN 심화
 - [03_01_k최근접이웃_회귀알고리즘](https://github.com/DDORINY/study_AI_26/blob/main/03_01_k_%EC%B5%9C%EA%B7%BC%EC%A0%91%EC%9D%B4%EC%9B%83_%ED%9A%8C%EA%B7%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.ipynb)
-- 03_02_k최근접이웃회귀의한계.ipynb
+- [03_02_k최근접이웃회귀의한계](https://github.com/DDORINY/study_AI_26/blob/main/03_02_k%EC%B5%9C%EA%B7%BC%EC%A0%91%EC%9D%B4%EC%9B%83%ED%9A%8C%EA%B7%80%EC%9D%98%ED%95%9C%EA%B3%84.ipynb)
 - 03_03_특성공학_규제.ipynb
 
 - [x] 회귀 개념
