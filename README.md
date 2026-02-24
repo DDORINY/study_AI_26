@@ -12,6 +12,9 @@
 - [x] 데이터 전처리 (StandardScaler)
 - [x] KNN 분류 기초
 > 머신러닝 기본기 완료 단계
+
+[학습노트](https://github.com/DDORINY/study_AI_26/tree/main)
+
 ---
 
 ## 2단계: KNN 심화
