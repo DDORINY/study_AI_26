@@ -13,7 +13,7 @@
 - [x] KNN 분류 기초
 > 머신러닝 기본기 완료 단계
 
-[학습노트]([https://github.com/DDORINY/study_AI_26/tree/main](https://github.com/DDORINY/study_AI_26/blob/main/Supervised%20Learning%20Basics.md))
+[학습노트](https://github.com/DDORINY/study_AI_26/blob/main/Supervised%20Learning%20Basics.md)
 
 ---
 
