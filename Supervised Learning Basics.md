@@ -13,9 +13,9 @@
 
 ## 📂 포함 노트북
 
-- [01_01_mbc마켓머신러닝](01_01_mbc마켓머신러닝.ipynb)
-- [02_01_훈련세트_테스트세트](02_01_훈련세트_테스트세트.ipynb)
-- [02_02_데이터전처리](02_02_데이터전처리.ipynb)
+- [01_01_mbc마켓머신러닝](https://github.com/DDORINY/study_AI_26/blob/main/01_01_MBC%EB%A7%88%EC%BC%93%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.ipynb)
+- [02_01_훈련세트_테스트세트](https://github.com/DDORINY/study_AI_26/blob/main/02_01_%ED%9B%88%EB%A0%A8%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%84%B8%ED%8A%B8.ipynb)
+- [02_02_데이터전처리](https://github.com/DDORINY/study_AI_26/blob/main/02_02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC.ipynb)
 
 ---
 
