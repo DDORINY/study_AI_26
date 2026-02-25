@@ -1,50 +1,67 @@
-# study_AI_26
-머신러닝 학습용 (https://wikidocs.net/book/14720)
-> 단순 코드 실행이 아니라<br>이해 → 한계 경험 → 개선 → 확장의 과정을 기록하는 공간
+# study_AI_26 (branch: 01)
+
+> NumPy / Matplotlib 학습 노트 정리 & 진행 로그  
+> 목표: “학습 기록형(공부 과정 중심)”으로 누적
 
 ---
-## 학습 목표
-- 머신러닝 전체 흐름 이해
-- 모델이 왜 그렇게 동작하는지 설명 가능 수준 도달
-- 과대적합/과소적합을 실제 코드로 경험
-- 규제, 튜닝, 검증까지 직접 적용
-- 딥러닝 기본 구조 이해
 
-# 학습 진행 로그
+## 학습 진행 로그
 
-## ✅ 01 ~ 03 : 머신러닝 기초 다지기
-- [01_01_mbc마켓머신러닝](https://github.com/DDORINY/study_AI_26/blob/main/01_01_MBC%EB%A7%88%EC%BC%93%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.ipynb)
-- [02_01_훈련세트_테스트세트](https://github.com/DDORINY/study_AI_26/blob/main/02_01_%ED%9B%88%EB%A0%A8%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%84%B8%ED%8A%B8.ipynb)
-- [02_02_데이터전처리](https://github.com/DDORINY/study_AI_26/blob/main/02_02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC.ipynb)
-- [03_01_k최근접이웃_회귀알고리즘](https://github.com/DDORINY/study_AI_26/blob/main/03_01_k_%EC%B5%9C%EA%B7%BC%EC%A0%91%EC%9D%B4%EC%9B%83_%ED%9A%8C%EA%B7%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.ipynb)
-- [03_02_k최근접이웃회귀의한계](https://github.com/DDORINY/study_AI_26/blob/main/03_02_k%EC%B5%9C%EA%B7%BC%EC%A0%91%EC%9D%B4%EC%9B%83%ED%9A%8C%EA%B7%80%EC%9D%98%ED%95%9C%EA%B3%84.ipynb)
-- [03_03_특성공학_규제](https://github.com/DDORINY/study_AI_26/blob/main/03_03_%ED%8A%B9%EC%84%B1%EA%B3%B5%ED%95%99_%EA%B7%9C%EC%A0%9C.ipynb)
-- [03_03_특성공학_규제](https://github.com/DDORINY/study_AI_26/blob/main/03_03_%ED%8A%B9%EC%84%B1%EA%B3%B5%ED%95%99_%EA%B7%9C%EC%A0%9C.ipynb)
+### ✅ Day 1 — NumPy 기초 (numpy.ipynb)
+- 파일: [`numpy.ipynb`](./numpy.ipynb)
+- 학습 목표
+  - [x] ndarray 구조 이해
+  - [x] 배열 생성 방법 (list/tuple → np.array 등)
+  - [x] dtype 개념 / 자료형 지정 (int8, i1 등)
+  - [x] 1D/2D/3D 배열 다루기
+  - [x] 리스트 vs ndarray 연산 차이 (벡터화)
+  - [x] 기본 집계 함수 맛보기 (sum, mean 등)
+  - [ ] 인덱싱 & 슬라이싱 정리 보강
+  - [ ] 브로드캐스팅 원리 예제 추가
+  - [ ] reshape / transpose 구조 변환 예제 추가
 
-- > [학습노트 요약 보러가기](https://github.com/DDORINY/study_AI_26/blob/main/Supervised%20Learning%20Basics.md)
+- 실습 체크포인트
+  - [x] `np.array()`로 배열 생성
+  - [x] `dtype` 확인/지정
+  - [x] 기본 연산(+, *, /) 벡터화 체감
+  - [x] `np.sum`, `np.mean`으로 집계
 
-### 파일
-- 01_01_mbc마켓머신러닝
-- 02_01_훈련세트_테스트세트
-- 02_02_데이터전처리
-- 03_01_k최근접이웃회귀
-- 03_02_k최근접이웃회귀의한계
-- 03_03_특성공학_규제
-
-### 배운 것
-- 지도학습 개념
-- KNN 분류/회귀 원리
-- 훈련/테스트 분리 이유
-- 스케일링이 필요한 이유
-- 과대적합 발생 원리
-- 다항 특성 생성
-- Ridge / Lasso 규제
-
-### 느낀 점
-- 단순 모델은 구조적으로 한계가 있다
-- 데이터 범위를 벗어나면 예측 불가
-- 모델 복잡도는 반드시 제어해야 한다
-
-> KNN은 데이터 범위를 벗어나면 예측 불가<br>모델 복잡도는 k 값에 따라 조절됨<br>단순 모델의 한계를 경험하는 단계
+- 메모 / 느낀 점
+  - (여기에 오늘 배운 핵심 3줄 요약)
+  - (헷갈린 개념 / 내일 보완할 내용)
 
 ---
+
+### ✅ Day 2 — Matplotlib 기초 + Titanic 시각화 (Matplotlib.ipynb)
+- 파일: [`Matplotlib.ipynb`](./Matplotlib.ipynb)
+- 학습 목표
+  - [x] Matplotlib 기본 개념 이해 (figure/axes 감 잡기)
+  - [x] 기본 그래프 생성 (line 중심)
+  - [ ] 다양한 그래프 생성 (bar / hist / scatter 등) 정리
+  - [ ] 그래프 스타일 및 옵션(제목/라벨/범례/간격/색 등) 정리
+  - [ ] Titanic 데이터 기반 시각화 미니 실습 정리
+
+- 실습 체크포인트
+  - [x] `plt.plot()` 기본 사용
+  - [ ] `plt.title()`, `plt.xlabel()`, `plt.ylabel()` 옵션 정리
+  - [ ] `plt.legend()` 범례 처리
+  - [ ] `plt.subplot()` / `plt.suptitle()` / `tight_layout()` 레이아웃 정리
+  - [ ] 스타일 적용(`color`, `linewidth`, `marker`, `grid` 등)
+
+- 메모 / 느낀 점
+  - (여기에 오늘 배운 핵심 3줄 요약)
+  - (헷갈린 개념 / 내일 보완할 내용)
+
+---
+
+## 다음에 할 일 (Backlog)
+- [ ] NumPy: 브로드캐스팅/마스킹/boolean indexing 예제 추가
+- [ ] NumPy: reshape/transpose/axis 개념 정리 + 그림으로 설명
+- [ ] Matplotlib: subplot + suptitle + tight_layout 충돌 케이스 정리
+- [ ] Titanic: “성별/등급별 생존율” 그래프 2~3개로 정리
+
+---
+
+## 규칙 (내가 보기 좋게)
+- 노트북 1개 끝날 때마다 README 로그에 **체크 + 3줄 요약** 남기기
+- 코드 블록은 “최소 예제”만, 나머지는 bullet로 설명
