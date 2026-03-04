@@ -97,37 +97,68 @@ matplotlib
 ---
 
 # KNN (K-최근접)
-가장 가까운 데이터 기준분류
+가장 가까운 데이터 기준분류<br>
+데이터를 특정 클래스(범주)로 분류<br>
+즉, 결과가 카테고리<br>
+
+K 값 : 몇개의 이웃을 참고할지 
+투표 : 분류 결정
 
 `from sklearn.neighbors import KNeighborsClassifier`
+
+**사용되는 수학 : 거리계산**
+- 유클리스 거리 : 데이터 간 유사도 측정
 
 ---
 
 # 로지스틱 회귀
-확률기반 분류 
+선형결합 → 확률기반 분류 
 
 `from sklearn.linear_model import LogisticRegression`
 
 - 시그모이드함수 : 이진 분류
+  → 0~1의 사이의 값을 갖는다.
+  
 - 소프트맥스 : 다중 분류
-
+  → 각 클래스 확률 계산
+  
 ---
 
 # 경사하강
 
 `SGDClassifier`
+경사 하강법은 Loss 최소화하는 것을 목표로 한다. 
+
+**Loss 함수**
+- hinge → SVM
+- log_loss → 로지스틱
+- squared_loss → 회귀
+
+Loss 기울기 계산 → 조금씩 이동 → 최소값 찾기
+→ 딥러닝과 구조가 비슷하다. 
 
 ---
 
 # DecisionTree (의사결정 트리)
-조건문 기반 모델
+조건문 기반 모델<br>
+데이터 분햘 → 불순도 감소
 
 `from sklearn.tree import DecisionTreeClassifier`
+
+**사용되는 함수**
+`Gini impurity`<br>
+데이터 섞인 정도( 0 → 완전 분리 )
+
+`Entropy`
+정보량 계산 
 
 ---
 
 # RandomForest (랜덤 포레스트)
-여러 결정트리 합쳐서 성능 향상
+여러 결정트리 합쳐서 성능 향상 (앙상블)
+여러 DecisionTree → 결과 평균
+
+`Bootstrap sampling` 데이터 랜덤 샘플링
 
 `from sklearn.ensemble import RandomForestClassifier`
 
@@ -163,6 +194,11 @@ min_samples
 
 # 비지도 학습 KMeans (K 평균)
 데이터 군집 찾기
+```
+데이터
+→ 중심 계산
+→ 반복 이동
+```
 
 `from sklearn.cluster import KMeans`
 
@@ -177,5 +213,11 @@ min_samples
 
 # PCA 주성분분석
 데이터 차원축소 
+```
+공분산 행렬
+↓
+고유값
+고유벡터
+```
 
 `from sklearn.decomposition import PCA`
